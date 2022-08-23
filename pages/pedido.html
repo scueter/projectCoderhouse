@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastrea tu pedido</title>
+    <link rel="stylesheet" href="../estilos/nuevo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0a5b95b78.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header id="header">
+        <a href="#"><img src="https://www.pngitem.com/pimgs/m/483-4838381_delivery-icon-transparent-background-hd-png-download.png" alt="logo empresa" class="header__logo"></a>
+        <nav>
+            <ul class="header__menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./envio.html">Realiza un envío</a></li>
+                <li><a href="./pedido.html">Rastrea un pedido</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./Nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1 class="main__titulos">Revisa el estado de tus pedidos y envios</h1>
+
+        <div class="main__solicitudes">
+    
+            <form class="main__solicitud__pedido">
+
+                <div class="main__solicitud__datos"> 
+                    <h4 class="main__h4">Rastrea un paquete</h4>
+                    <section class="main__pedido__campos pedido">
+                        <h4 class="main__h4__pedido">¿Qué deseas consultar?</h4>
+                        <label for="">
+                            Paquete
+                            <input type="radio" name="consultaType" value="paquete">
+                        </label>
+                        <label for="">
+                            Envío de dinero
+                            <input type="radio" name="consultaType" value="dinero">
+                        </label>
+                        <input class="main__solicitud__largo__pedido" type="number" placeholder="Ingresa el numero de guia (Ej: 91321321)" required maxlength="30">
+                        
+                        <div class="main__solicitud__boton pedido">
+                            <input class="main__boton" type="reset" value="Limpiar todo">
+                            <input class="main__boton" type="submit" value="Realizar consulta">
+                        </div>
+                    </section>
+                </div>
+
+
+        </div>            
+    </main>
+
+    <footer id="footer">
+        <section class="footer__atajos">
+            <div>
+                <h4 class="main__h4">Siguenos en nuestras redes sociales</h4>
+                <ul class="footer__redes">
+                    <li class="footer__redes__circulo"><a href="https://www.facebook.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="footer__redes__circulo"><a href="https://twitter.com/home" class="footer__redes__tw" id="hover"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="footer__redes__circulo"><a href="https://www.youtube.com/" class="footer__redes__yt" id="hover"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="footer__redes__circulo"><a href="https://www.instagram.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="footer__redes__circulo"><a href="https://www.linkedin.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <h4 class="main__h4">Trabaja con nosotros</h4>
+            <h4 class="main__h4">PQR</h4>
+        </section>
+        <h6>©2022 Mensajeria, All Rights Reserved</h6>
+    </footer>
+</body>
+</html>

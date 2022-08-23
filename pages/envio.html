@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicita tu envío aquí</title>
+    <link rel="stylesheet" href="../estilos/nuevo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0a5b95b78.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header id="header">
+        <a href="#"><img src="https://www.pngitem.com/pimgs/m/483-4838381_delivery-icon-transparent-background-hd-png-download.png" alt="logo empresa" class="header__logo"></a>
+        <nav>
+            <ul class="header__menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./envio.html">Realiza un envío</a></li>
+                <li><a href="./pedido.html">Rastrea un pedido</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./Nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+      
+    <main id="main">
+        <h1 class="main__titulos">Realiza un envío</h1>
+
+        <form class="main__solicitud">
+
+            <div class="main__solicitud__datos"> 
+                <h4 class="main__h4">Datos de envío </h4>
+                <section class="main__solicitud__campos datos">
+                    <input class="main__solicitud__largo" type="text" placeholder="Ciudad origen" required maxlength="30">
+                    <input class="main__solicitud__largo" type="text" placeholder="Ciudad destino" required maxlength="30">
+                    <input class="main__solicitud__largo" type="number" placeholder="Valor declarado en dolares" required min="0" max="99999999999">
+                    <input class="main__solicitud__corto" type="number" placeholder="Peso(kg)" required min="0" max="99999">
+                    <input class="main__solicitud__corto" type="number" placeholder="Alto(cm)" required min="0" max="99999">
+                    <input class="main__solicitud__corto" type="number" placeholder="Ancho(cm)" required min="0" max="99999">
+                    <input class="main__solicitud__largo" type="text" placeholder="Direccion para recoger el paquete" required maxlength="50">
+                </section>
+            </div>
+
+            <div class="main__solicitud__datos"> 
+                <h4 class="main__h4">Datos de remitente </h4>
+                <section class="main__solicitud__campos datos">
+                    <input class="main__solicitud__largo" type="text" placeholder="Nombre(s) y apellido(s)" required maxlength="1">
+                    <input class="main__solicitud__largo" type="number" placeholder="Numero de identificacion" required min="1" max="99999999999">
+                    <input class="main__solicitud__medio" type="number" placeholder="Celular" min="0" max="4000000000" required>
+                    <input class="main__solicitud__corto edad" type="number" placeholder="Edad" min="18" max="150" required>
+                    <input class="main__solicitud__largo" type="email" placeholder="Correo electronico" maxlength="50" required>
+                </section>
+            </div>
+
+            <div class="main__solicitud__datos"> 
+                <h4 class="main__h4">Datos de destinatario </h4>
+                <section class="main__solicitud__campos datos">
+                    <input class="main__solicitud__largo" type="text" placeholder="Nombre(s) y apellido(s)" required maxlength="1">
+                    <input class="main__solicitud__largo" type="number" placeholder="Numero de identificacion" required min="1" max="99999999999">
+                    <input class="main__solicitud__medio" type="number" placeholder="Celular" min="0" max="4000000000" required>
+                    <input class="main__solicitud__corto edad" type="number" placeholder="Edad" min="18" max="150" required>
+                    <input class="main__solicitud__largo" type="email" placeholder="Correo electronico" maxlength="50" required>
+                    <input class="main__solicitud__largo" type="text" placeholder="Direccion para entregar el paquete" required maxlength="50">
+                </section>
+            </div>
+
+            <div class="main__solicitud__boton">
+                <input class="main__boton" type="reset" value="Limpiar todo">
+                <input class="main__boton" type="submit" value="Realizar solicitud">
+            </div>
+        </form>
+
+        <h1 class="main__titulos">
+            Envia dinero <br>
+            *Por temas de tiempo esta seccion se encuentra en construccion, se tendra listo para la segunda entrega*
+        </h1>
+
+        
+
+    </main>
+
+
+    <footer id="footer">
+        <section class="footer__atajos">
+            <div>
+                <h4 class="main__h4">Siguenos en nuestras redes sociales</h4>
+                <ul class="footer__redes">
+                    <li class="footer__redes__circulo"><a href="https://www.facebook.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="footer__redes__circulo"><a href="https://twitter.com/home" class="footer__redes__tw" id="hover"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="footer__redes__circulo"><a href="https://www.youtube.com/" class="footer__redes__yt" id="hover"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="footer__redes__circulo"><a href="https://www.instagram.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="footer__redes__circulo"><a href="https://www.linkedin.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <h4 class="main__h4">Trabaja con nosotros</h4>
+            <h4 class="main__h4">PQR</h4>
+        </section>
+        <h6>©2022 Mensajeria, All Rights Reserved</h6>
+    </footer>
+</body>
+</html>

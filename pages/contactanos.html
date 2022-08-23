@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos - 24/7</title>
+    <link rel="stylesheet" href="../estilos/nuevo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0a5b95b78.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header id="header">
+        <a href="#"><img src="https://www.pngitem.com/pimgs/m/483-4838381_delivery-icon-transparent-background-hd-png-download.png" alt="logo empresa" class="header__logo"></a>
+        <nav>
+            <ul class="header__menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./envio.html">Realiza un envío</a></li>
+                <li><a href="./pedido.html">Rastrea un pedido</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./Nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="main__encabezado">
+            <p class="main__titulo_contacto"><i class="fa-solid fa-headset"></i> Contactanos</p>
+        </section>
+        
+        <h1 class="main__titulos">Canales de atencion</h1>
+        <p class="main__p">Recuerda que tambien puedes resolver tus dudas en nuestra sección de <a href="#">preguntas frecuentes</a>.</p>
+        <p class="main__p">Disponemos de diversos canales para que puedas comunicarte con nosotros de manera directa, clara y sencilla. Conócelos en este espacio.</p>
+
+        <div>
+            <section class="main__body">
+                <form action="" >
+                    <fieldset id="main__mensaje" class="main__cuadro__contacto">
+                        <legend class="main__leyendas"><i class="fa-solid fa-envelope"></i> Escribenos un mensaje</legend>
+                        <div>
+                            <input class="main__solicitud__largo__pedido" type="text" placeholder="Tu nombre y apellido" required maxlength="30">
+                            <input class="main__solicitud__largo__pedido" type="email" placeholder="Escribe tu correo" required>
+                            <label for="adjuntar">
+                                <input class="main__boton__file" type="file" value="Adjuntar" accept="image/png, image/jpg, image/gif, image/jpeg" id="adjuntar">
+                                <input class="main__boton" type="reset" value="Limpiar todo">
+                            </label>
+                        </div>
+                        <textarea class="main__mensaje__texto" name="mensaje" id="mensaje" cols="30" rows="10" required required maxlength="200" placeholder="Escribe tu mensaje de maximo 200 caracteres." required></textarea>
+                        <div class="main__mensaje__bottom">
+                            <input class="main__boton" type="submit" value="Enviar mensaje">
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div >
+                    <fieldset id="main__lineas" class="main__cuadro__contacto">
+                        <legend class="main__leyendas"> <i class="fa-solid fa-phone-flip"></i>  Lineas telefonicas</legend>
+                        <p> Si deseas comunicarte con nosotros para brindarte ayuda especializada en tu solicitud contactanos a traves de las siguientes lineas:</p>
+
+                        <div class="main__lineas__nacional">
+                            <p class="main__lineas__tit">Para Colombia:</p>
+                            <ul> 
+                                <li class="main__lineas__telefono">
+                                    Bogota (+57) 601 300 9000  
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Medellin (+57) 602 400 1000 
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Cali (+57) 603 500 2000
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Barranquilla (+57) 604 600 3000 
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Armenia (+57) 605 700 4000  
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Linea nacional 01800 04 52487 
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="main__lineas__internacional">
+                            <p class="main__lineas__tit">Para el exterior:</p>
+                            <ul> 
+                                <li class="main__lineas__telefono">
+                                    Estados Unidos (+57) 601 300 9000
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Espana (+57) 602 400 1000
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Asia (+57) 603 500 2000
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Argentina (+57) 604 600 3000
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Panama (+57) 605 700 4000
+                                </li>
+                                <li class="main__lineas__telefono">
+                                    Mexico 01800 04 52487
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="main__chat">    
+                    <fieldset class="main__cuadro__contacto">
+                        <legend class="main__leyendas"><i class="fa-brands fa-rocketchat"></i>  Chat en linea</legend>
+                        <p>Si tu consulta trata sobre el estado de un envio ten a la mano los datos relacionados con este, y por favor estar atento a las respuestas del chat.</p>
+                        <p>Para comenzar un chat con un asesor primero diligencia estos datos:</p>
+                        <form class="main__chat__form" action="">
+                            <div>
+                                <input class="main__solicitud__largo__pedido" type="text" placeholder="Tu nombre y apellido" required maxlength="30">
+                            </div>
+                            <div>
+                                <input class="main__solicitud__largo__pedido" type="email" placeholder="Escribe tu correo electronico" required>
+                            </div>
+                            <p>Selecciona tu tipo de solicitud  </p>
+                            <select name="solicitud" id="solicitud" required>
+                                <option value="">Selecciona una opcion</option>
+                                <option value="rastrea">Rastrear un pedido</option>
+                                <option value="Cotizar">Cotizar un pedido</option>
+                                <option value="envio">Realizar un envio</option>
+                                <option value="otros">Consulta general</option>
+                            </select>
+                            <p>Selecciona si eres de:</p>
+                            <div>    
+                                <label for="">
+                                    Colombia
+                                    <input type="radio" name="nacionalidad" value="colombia" id="nacionalidad" required>
+                                </label>
+                                <label for="">
+                                    Otro pais
+                                    <input type="radio" name="nacionalidad" value="internacional" id="nacionalidad" required>
+                                </label>
+                            </div>
+                            <div class="main__chat__campo" >
+                                <input type="checkbox"required>Acepto <a href="">Terminos y condiciones</a>  
+                            </div>
+                            <div class="main__chat__campo">
+                                <input class="main__boton" type="reset" value="Limpiar campos">
+                            </div>
+                            <div class="main__chat__campo">
+                                <input class="main__boton" type="submit" value="Empezar chat con asesor">
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+
+                <div class="main__oficinas">
+                    <fieldset class="main__cuadro__contacto">
+                        <legend class="main__leyendas"><i class="fa-solid fa-shop"></i>  Oficinas</legend>
+                        <p>Contamos con presencia en 10 paises y contamoscon cobertura total a nivel nacional en Colombia, por favor utiliza el mapa para encontrar la oficina mas cercana a tu ubicacion:</p>
+                        <div ><div class="gmap_canvas"><iframe width="auto" height="220" id="gmap_canvas" src="https://maps.google.com/maps?q=medellin%20mensajeria&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></style></div></div>
+                    </fieldset>
+                </div>
+
+
+
+            </section>
+        </div>
+        <footer id="footer">
+            <section class="footer__atajos">
+                <div>
+                    <h4 class="main__h4">Siguenos en nuestras redes sociales</h4>
+                    <ul class="footer__redes">
+                        <li class="footer__redes__circulo"><a href="https://www.facebook.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="footer__redes__circulo"><a href="https://twitter.com/home" class="footer__redes__tw" id="hover"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="footer__redes__circulo"><a href="https://www.youtube.com/" class="footer__redes__yt" id="hover"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="footer__redes__circulo"><a href="https://www.instagram.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="footer__redes__circulo"><a href="https://www.linkedin.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <h4 class="main__h4">Trabaja con nosotros</h4>
+                <h4 class="main__h4">PQR</h4>
+            </section>
+            <h6>©2022 Mensajeria, All Rights Reserved</h6>
+        </footer>
+</body>
+</html>
