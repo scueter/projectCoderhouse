@@ -687,7 +687,17 @@ input:focus {
     }
     
 
-     /* envio */
+     /* pedido */
+
+     #card {
+        display: none;
+    }
+
+    #main .main__solicitud__pedido {
+        height: 80vh;
+    }
+
+    /* envio */
 
      #main .main__solicitud {
         display: inline;
@@ -789,14 +799,23 @@ input:focus {
     #main .main__sostenibilidad img {
         width: 320px;
     }
-    
+
         
 }
 
 @media (min-width: 769px) and (max-width: 989px) {
+    #card {
+        display: none;
+    }
+
+    #main .main__solicitud__pedido {
+        height: 80vh;
+    }
 
 }
 
  @media (min-width: 990px) { /* min = hasta... */
-
+    #main .main__solicitud__pedido {
+        height: 40vh;
+    }
 }
