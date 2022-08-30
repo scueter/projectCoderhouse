@@ -11,7 +11,7 @@
 /* Estilos Globales */
 
 body {
-    background-color: rgb(231, 222, 222);
+    background-color: rgb(231, 222, 222)!important;
 }
 
 #header {
@@ -28,6 +28,24 @@ body {
     width: 30%;
     mix-blend-mode: multiply; 
 }
+
+header {
+    background-color: linear-gradient(180deg, #2FB05D, #18A555);
+}
+
+.navbar-brand img {
+    width: 30%;
+    mix-blend-mode: multiply;
+}
+
+.nav-link:hover {
+    color: white!important; /* era justo y necesario, no dejo de ningun otra forma */
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
 
 
 #header .header__menu {
@@ -170,8 +188,13 @@ body {
     display: flex;
 }
 
+#main .main__extras p {
+    padding-left: 80px;
+}
+
 #main .main__extras img {
     width: 15%;
+    background-color: inherit;
     mix-blend-mode: multiply;
 }
 
@@ -183,7 +206,12 @@ body {
 
 #main .main__extras__horario li {
     display: table;
-    margin: 0 auto
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+#main .main__extras__img {
+    position: fixed;
 }
 
 
@@ -339,7 +367,7 @@ body {
 #main .main__solicitud__pedido {
     justify-items: center;
     margin: 5%;
-    height: 55vh;
+    height: 30vh;
 }
 
 #main .main__pedido__campos {
@@ -372,6 +400,12 @@ body {
     justify-self: center;
 }
 
+.card img {
+    align-self: center;
+    width: 40%;
+    height: 80px;
+}
+
 /* estilos exclusivos de contactanos */
 
 /* contactanos- general */
@@ -389,6 +423,7 @@ input:focus {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+    padding-bottom: 80px;
 }
 
 #main .main__titulo_contacto {
@@ -412,7 +447,7 @@ input:focus {
 }
 
 #main .main__cuadro__contacto {
-    height: 21rem;
+    height: auto;
     border: 0.2rem solid #038203;
 }
 
@@ -426,7 +461,14 @@ input:focus {
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
+
+#main__mensaje .main__leyendas {
+    grid-column: 1/3;
+}
+
+
 
 #main .main__mensaje__texto {
     width: 90%;
@@ -466,6 +508,8 @@ input:focus {
     align-self: center;
     justify-self: center;
 }
+
+
 
 
 /* Estilos exlusivos de Nosotros */
@@ -574,9 +618,21 @@ input:focus {
         display: inline-flexbox;
     }
 
+    .container {
+        display: inline;
+        width: 10%;
+    }
+
     #header .header__logo {
         display: none;
     }
+
+    .navbar-brand img {
+        display: none;
+    }
+
+
+    
 
     #header .header__menu {
         display: flex;
