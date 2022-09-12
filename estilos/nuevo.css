@@ -14,20 +14,6 @@ body {
     background-color: rgb(231, 222, 222)!important;
 }
 
-#header {
-    width: 100%;
-    max-height: 100px;
-    border: rgb(7, 133, 13) 0.51rem;
-    border-style: none double solid;
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-#header .header__logo {
-    width: 30%;
-    mix-blend-mode: multiply; 
-}
-
 header {
     margin-bottom: 50px;
 }
