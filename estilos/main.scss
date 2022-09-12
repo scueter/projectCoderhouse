@@ -1,8 +1,137 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;    
+//imports
+@import 'global';
+@import 'vars';
+@import 'mainTheme';
+
+//plantillas
+
+@mixin bulletList {
+    padding: 36px 0 36px 40px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 90px;
+    background-blend-mode: multiply; 
+    
 }
+
+
+/* Estilos exclusivos de Index */
+
+
+
+.main {
+    /* Index - Aniversario */
+    & &__empresa{
+        grid-column: 1/3;
+        display: inline;
+        & img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            width: 15%;
+            mix-blend-mode: multiply;
+        }
+    }
+    /* Index - Servicios */
+    & &__servicios {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        &_a {
+            margin-top: 20px;
+            display: flex;
+            grid-column: 1/3;
+            background: radial-gradient(farthest-side at 49% 50%, $secundaryColor, $bgColor);
+        }
+        &__img {
+            width: 50%;
+            border: solid $lightColor 0.1rem;
+            margin: 1rem;
+        }
+        &__atajos li {
+            padding-left: 1rem;
+            margin-bottom: 3rem;
+            margin-top: 2rem;
+            &:hover {
+                text-decoration: underline;
+            }
+            & a {
+                color: #1c1c1c;
+                font-size: 1.2rem;
+                text-decoration: solid;
+                border-left: solid $secundaryColor 0.6rem;
+                border-right: solid $secundaryColor 0.6rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+    /* Index__servicios__tarifas&horario */
+    & &__extras {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        & img {
+            width: 20%;
+            mix-blend-mode: $imgBlend;
+        }
+        &__horario {
+            display: inline-block;
+            & li {
+                display: table;
+                text-align: center;
+            }
+        }
+    }
+    & &__leyendas.a {
+        @include bulletList;
+        background-image: url("https://www.kindpng.com/picc/m/24-240621_dollar-sign-png-green-green-dollar-sign-youtube.png");
+    }
+    & &__leyendas.b {
+        @include bulletList;
+        background-image: url("https://images.vexels.com/media/users/3/132299/isolated/preview/404f8c866ab55f52ed3f3cd8088e285c-caja-de-calendario-verde-espiral.png");
+    }
+
+    /* Index__servicios__app */
+    & &__app {
+        width: 80%;
+        text-align: center;
+        &__contenido {
+            background: radial-gradient( $primaryColor, $bgColor);
+            border-radius: 100%
+        }
+        &__appstore {
+            width: 20vw;
+            margin: auto;
+            mix-blend-mode: $imgBlend;
+        }
+        &__playstore {
+            width: 17vw;
+            margin: auto;
+            mix-blend-mode: multiply;
+        }
+        &__parrafo {
+            text-align: center;
+            font-style: italic;
+        }
+        &__preview {
+            width: 80%;
+            mix-blend-mode: $imgBlend;
+            border-top-right-radius: 20%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+    }
+    /* Index__servicios__mapa */
+    & &__oficina__img {
+        width: 2vw;
+        height: auto;
+    }
+}
+
+
+
+
+

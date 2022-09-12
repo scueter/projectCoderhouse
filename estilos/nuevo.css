@@ -14,24 +14,6 @@ body {
     background-color: rgb(231, 222, 222)!important;
 }
 
-#header {
-    width: 100%;
-    max-height: 100px;
-    border: rgb(7, 133, 13) 0.51rem;
-    border-style: none double solid;
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-#header .header__logo {
-    width: 30%;
-    mix-blend-mode: multiply; 
-}
-
-header {
-    margin-bottom: 50px;
-}
-
 .navbar-brand img {
     width: 30%;
     mix-blend-mode: multiply;
@@ -45,7 +27,7 @@ header {
     text-decoration: underline;
 }
 
-#main {
+.main {
     display: grid;
     background-color: inherit;
     width: 80%;
@@ -53,14 +35,14 @@ header {
     height: auto;
 }
 
-#main .main__titulos {
+.main .main__titulos {
     border-bottom: 5px solid #18A555;
     text-align: center;
     color: #1a5336;
     width: 40%;
     display: inline-block;
     position: relative;
-    left: 50%; 
+    left: 30%; 
     transform: translateX(-50%);
 }
 
@@ -70,21 +52,21 @@ header {
     color: #038203;
 }
 
-#main .main__leyendas {
+.main .main__leyendas {
     color: #038203;
     text-align: center;
     padding: 0.2rem;
 }
 
 
-#main .main__boton {
+.main .main__boton {
     color: #038203;
     background-color:  aliceblue;
     border-radius: 100px;
     width: 200px;
 }
 
-#main .main__boton:hover {
+.main .main__boton:hover {
     color: aliceblue;   
     background-color:  #038203;
     border-radius: 100px;
@@ -92,24 +74,24 @@ header {
     cursor: pointer;
 }
 
-#main .main__cuadro {
+.main .main__cuadro {
     margin: 1rem;  
     width: 25rem;
     border: 0.2rem solid #038203;
     background-color: white;
 }
 
-#main .main__lista {
+.main .main__lista {
     margin-top: 2%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
 
-#main .main__lista ul {
+.main .main__lista ul {
     align-items: center;    
 }
 
-#main .main__lista li {
+.main .main__lista li {
 	padding: 36px 0 36px 40px;
 	background-image: url(../img/oklist.png);
 	background-repeat: no-repeat;
@@ -122,12 +104,12 @@ header {
 
 /* Index - Aniversario */
 
-#main .main__empresa {
+.main .main__empresa {
     grid-column: 1/3;
     display: inline;
 }
 
-#main .main__empresa img {
+.main .main__empresa img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -138,39 +120,34 @@ header {
     
 }
 
-#main .main__empresa_parrafo {
-    border-bottom: 0.2rem solid #18A555;
-    border-right: 0.2rem solid #18A555;
-}
-
 /* Index - servicios */
 
-#main .main__servicios {
+.main .main__servicios {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-#main .main__servicios_a {
+.main .main__servicios_a {
     margin-top: 20px;
     display: flex;
     grid-column: 1/3;
     background: radial-gradient(farthest-side at 49% 50%,#18A555, rgb(231, 222, 222));
 }
 
-#main .main__servicios__img {
+.main .main__servicios__img {
     width: 50%;
     border: solid white 0.1rem;
     margin: 1rem;
 }
 
-#main .main__servicios__atajos li {
+.main .main__servicios__atajos li {
     padding-left: 1rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
 }
 
-#main .main__servicios__atajos li a {
+.main .main__servicios__atajos li a {
     color: #1c1c1c;
     font-size: 1.2rem;
     text-decoration: solid;
@@ -180,24 +157,24 @@ header {
     padding-right: 2rem;
 }
 
-#main .main__servicios__atajos li:hover {
+.main .main__servicios__atajos li:hover {
     text-decoration: underline;
 }
 
 /* Index__servicios__tarifas */
 
-#main .main__extras {
+.main .main__extras {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#main .main__extras img {
+.main .main__extras img {
     width: 20%;
     mix-blend-mode: multiply;
 }
 
-#main .main__leyendas.a {
+.main .main__leyendas.a {
     padding: 36px 0 36px 40px;
 	background-image: url("https://www.kindpng.com/picc/m/24-240621_dollar-sign-png-green-green-dollar-sign-youtube.png");
 	background-repeat: no-repeat;
@@ -209,16 +186,16 @@ header {
 
 /* Index__servicios__horarios */
 
-#main .main__extras__horario {
+.main .main__extras__horario {
     display: inline-block;
 }
 
-#main .main__extras__horario li {
+.main .main__extras__horario li {
     display: table;
     text-align: center;
 }
 
-#main .main__leyendas.b {
+.main .main__leyendas.b {
     padding: 36px 0 36px 40px;
 	background-image: url("https://images.vexels.com/media/users/3/132299/isolated/preview/404f8c866ab55f52ed3f3cd8088e285c-caja-de-calendario-verde-espiral.png");
 	background-repeat: no-repeat;
@@ -230,34 +207,34 @@ header {
 
 /* Index__servicios__app */
 
-#main .main__app {
+.main .main__app {
     width: 80%;
     text-align: center;
 }
 
-#main .main__app__contenido {
+.main .main__app__contenido {
     background: radial-gradient( #008a00, #d3d3d3);
     border-radius: 100%
 }
 
-#main .main__app__appstore {
+.main .main__app__appstore {
     width: 20vw;
     margin: auto;
     mix-blend-mode: multiply;
 }
 
-#main .main__app__playstore {
+.main .main__app__playstore {
     width: 17vw;
     margin: auto;
     mix-blend-mode: multiply;
 }
 
-#main .main__app_parrafo {
+.main .main__app_parrafo {
     text-align: center;
     font-style: italic;
 }
 
-#main .main__app__preview {
+.main .main__app__preview {
     width: 80%;
     mix-blend-mode: multiply;
     border-top-right-radius: 20%;
@@ -268,30 +245,30 @@ header {
 
 /* Index__servicios__mapa */
 
-#main .main__oficina__img {
+.main .main__oficina__img {
     width: 2vw;
     height: auto;
 }
 
 /* Footer */
 
-#footer .footer__atajos {
+.footer .footer__atajos {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
 }
 
-#footer .footer__redes {
+.footer .footer__redes {
     width: auto;
     display: flex;
     padding-left: 1rem;
 }
 
-#footer .footer__redes li {
+.footer .footer__redes li {
     padding-left: 1rem;
 }
 
-#footer .footer__redes__circulo {
+.footer .footer__redes__circulo {
     border: 1px solid #008a00;
     border-radius: 50%;
     height: 44px;
@@ -303,21 +280,21 @@ header {
     padding-top: 3px
 }
 
-#footer .footer__redes__finig {
+.footer .footer__redes__finig {
     display: table;
     margin: -0.5rem;
     padding-left: 0.1rem;
     color: #008a00;
 }
 
-#footer .footer__redes__tw {
+.footer .footer__redes__tw {
     display: table;
     margin: -0.5rem;
     padding-right: 0.2rem;
     color: #008a00;
 }
 
-#footer .footer__redes__yt {
+.footer .footer__redes__yt {
     display: table;
     margin: -0.6rem;
     padding-top: 0.2rem;
@@ -335,7 +312,7 @@ header {
 }
 
 
-#footer h6 {
+.footer h6 {
     text-align: center;
 }
 
@@ -345,7 +322,7 @@ header {
 
 /* Realiza un envio - formulario */
 
-#main .main__solicitud {
+.main .main__solicitud {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2fr 1fr;
@@ -355,19 +332,19 @@ header {
     gap: 5%;
 }
 
-#main .main__solicitud__boton {
+.main .main__solicitud__boton {
     margin-top: 1.5%;
     grid-column: 1/4;
     
 }
 
-#main .main__solicitud__campos {
+.main .main__solicitud__campos {
     display: grid;
     margin-top: 3%;
     border-bottom: solid green 4px;
 }
 
-#main .main__solicitud__campos input {
+.main .main__solicitud__campos input {
     border-radius: 6px;
     border-bottom: solid;
     height: 40px;
@@ -379,17 +356,17 @@ header {
     border-bottom: solid #18A555 4px;
 }
 
-#main .main__solicitud__largo {
+.main .main__solicitud__largo {
     grid-column: 1/4;
     width: 315px;
 }
 
-#main .main__solicitud__medio {
+.main .main__solicitud__medio {
     grid-column: 1/3;
     width: 210px;
 }
 
-#main .main__solicitud__corto {
+.main .main__solicitud__corto {
     width: 105px;
 }
 
@@ -398,25 +375,25 @@ header {
 
 /* Rastrea - main */
 
-#main .main__solicitud__pedido {
+.main .main__solicitud__pedido {
     justify-items: center;
     margin: 5%;
     height: 30vh;
 }
 
-#main .main__pedido__campos {
+.main .main__pedido__campos {
     display: grid;
     margin-top: 50px;
 }
 
 
-#main .main__h4__pedido {
+.main .main__h4__pedido {
     color: #325332;
     text-align: center;
     font-weight: 400;
 }
 
-#main .main__solicitud__largo__pedido {
+.main .main__solicitud__largo__pedido {
     width: 300px;
     justify-self: center;
     grid-column: 1/4;
@@ -428,7 +405,7 @@ header {
     border-radius: 10px;
 }
 
-#main .main__solicitud__boton.pedido {
+.main .main__solicitud__boton.pedido {
     margin-top: 5%;
     align-self: center;
     justify-self: center;
@@ -452,7 +429,7 @@ input:focus {
     background-color: rgb(236, 226, 226);
 }
 
-#main .main__body {
+.main .main__body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -460,7 +437,7 @@ input:focus {
     padding-bottom: 80px;
 }
 
-#main .main__titulo_contacto {
+.main .main__titulo_contacto {
     background-color: #009A44;
     color: aliceblue;
     width: 15rem;
@@ -473,25 +450,25 @@ input:focus {
     margin-top: 5rem ;
 }
 
-#main .main__encabezado {
+.main .main__encabezado {
     background: url(https://image.shutterstock.com/image-photo/call-center-help-line-service-260nw-2110709018.jpg) no-repeat top/70%;
     margin-top: 1rem;
     height: 19rem;
     border-radius: 50%;
 }
 
-#main .main__cuadro__contacto {
+.main .main__cuadro__contacto {
     height: auto;
     border: 0.2rem solid #038203;
 }
 
-#main .main__p {
+.main .main__p {
     text-align: center;
 }
 
 /* contactanos- mensaje */
 
-#main #main__mensaje {
+.main .main__mensaje {
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr;
@@ -499,13 +476,13 @@ input:focus {
     background-color: rgb(172, 236, 172);
 }
 
-#main__mensaje .main__leyendas {
+.main__mensaje .main__leyendas {
     grid-column: 1/3;
 }
 
 
 
-#main .main__mensaje__texto {
+.main .main__mensaje__texto {
     width: 90%;
     height: 100%;
     border: 5px solid #d3d3d3;
@@ -516,13 +493,13 @@ input:focus {
 
 /* contactanos - Lineas */
 
-#main #main__lineas {
+.main .main__lineas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: lightcyan;
 }
 
-#main #main__lineas p {
+.main .main__lineas p {
     grid-column: 1/3;
 }
 
@@ -533,17 +510,17 @@ input:focus {
 
 /* contactanos -Chat */
 
-#main .main__chat {
+.main .main__chat {
     background-color: whitesmoke;
 }
 
-#main .main__chat__form {
+.main .main__chat__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 10px;
 }
 
-#main .main__chat__campo {
+.main .main__chat__campo {
     grid-column: 1/3;
     align-self: center;
     justify-self: center;
@@ -556,7 +533,7 @@ input:focus {
 
 /*  Nosotros - main*/
 
-#main .main__h4.a {
+.main .main__h4.a {
     padding: 20px;
 }
 
@@ -567,7 +544,7 @@ input:focus {
     margin: 30px;
 }
 
-#main .main__discurso {
+.main .main__discurso {
     display: flex;
     align-items: center;
     align-content: center;
@@ -577,23 +554,23 @@ input:focus {
     margin-top: 50px;
 }
 
-#main .main__discurso img {
+.main .main__discurso img {
     width: 600px;
     border-bottom-right-radius: 35px;
     border-top-left-radius: 35px;
     margin-top: 10px;
 }
 
-#main .main__discurso__aniversario {
+.main .main__discurso__aniversario {
     display: grid;
     grid-template-rows: 5fr 1fr;
 }
 
-#main .main__discurso__aniversario p{
+.main .main__discurso__aniversario p{
     text-align: justify;
 }
 
-#main .main__objetivos {
+.main .main__objetivos {
     margin: 5% 0 5% 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -601,17 +578,17 @@ input:focus {
     background: radial-gradient(farthest-side at 50% 50%,#18A555, rgb(231, 222, 222));
 }
 
-#main .main__objetivos img {
+.main .main__objetivos img {
     width: 500px;
     border-bottom-left-radius: 35px;
     border-top-right-radius: 35px;
 }
 
-#main .main__objetivos h4 {
+.main .main__objetivos h4 {
     margin-bottom: 20px;
 }
 
-#main .main__boton__historia {
+.main .main__boton__historia {
     border: #008a00 solid 2px;
     border-radius: 25px;
     align-self: center;
@@ -623,22 +600,22 @@ input:focus {
     margin-top: 5px;
 }
 
-#main .main__boton__historia:hover {
+.main .main__boton__historia:hover {
     background-color: #008a00;
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
 
-#main .main__sostenibilidad {
+.main .main__sostenibilidad {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-#main .main__sostenibilidad p {
+.main .main__sostenibilidad p {
     margin-top: 20px;
 }
 
-#main .main__sostenibilidad img {
+.main .main__sostenibilidad img {
     mix-blend-mode: multiply;
 }
 
@@ -683,39 +660,39 @@ input:focus {
 
     /* index */
 
-    #main {
+    .main {
         justify-content: center;
         width: 10%;
         font-size: small;
     }
 
-    #main .main__servicios{
+    .main .main__servicios{
         grid-template-columns: 1fr;
     }
 
-    #main .main__app__appstore {
+    .main .main__app__appstore {
         width: 50%;
         margin: auto
     }
     
-    #main .main__app__playstore {
+    .main .main__app__playstore {
         width: 42%;
         margin: auto
     }
 
-    #main .main__servicios__img {
+    .main .main__servicios__img {
         display: none;
     }
 
-    #main .main__app__preview {
+    .main .main__app__preview {
         width: 100%;
     }
 
-    #main .main__oficina {
+    .main .main__oficina {
         display: none;
     }
 
-    #main .main__cuadro {  
+    .main .main__cuadro {  
         width: 18rem;
     }
     
@@ -726,20 +703,20 @@ input:focus {
         display: none;
     }
 
-    #main .main__solicitud__pedido {
+    .main .main__solicitud__pedido {
         height: 80vh;
     }
 
     /* envio */
 
-     #main .main__solicitud {
+     .main .main__solicitud {
         display: inline;
         text-align: center;
     }
 
     /* Contactanos */
 
-    #main .main__encabezado {
+    .main .main__encabezado {
         background: url(https://image.shutterstock.com/image-photo/call-center-help-line-service-260nw-2110709018.jpg) no-repeat top/100%;
         margin-top: 0;
         height: 10rem;
@@ -747,7 +724,7 @@ input:focus {
         width: auto;
     }
 
-    #main .main__titulo_contacto {
+    .main .main__titulo_contacto {
         width: 11rem;
         text-align: center;
         font-size: 1.5rem;
@@ -755,31 +732,31 @@ input:focus {
         margin-top: 2rem ;
     }
 
-    #main .main__body {
+    .main .main__body {
         display: flex;
         flex-wrap: wrap;
     }
     
-    #main .main__cuadro__contacto {
+    .main .main__cuadro__contacto {
         width: auto;
         height: 500px;
     }
 
-    #main #main__mensaje {
+    .main .main__mensaje {
         display: flex;
         flex-wrap: wrap;
     }
 
-    #main .main__mensaje__texto {
+    .main .main__mensaje__texto {
         width: 100%;
         height: auto;
     }
 
-    #main .main__solicitud__largo__pedido {
+    .main .main__solicitud__largo__pedido {
         width: 200px;
     }
 
-    #main .main__chat__form {
+    .main .main__chat__form {
         display: inline;
         text-align: center;
     }
@@ -791,45 +768,45 @@ input:focus {
 
     /* Nosotros */
 
-    #main {
+    .main {
         display: inline;
     }
     
-    #main .main__discurso {
+    .main .main__discurso {
         display: flex;
         flex-wrap: wrap;
         width: 90vw;
         gap: 10px;
     }
 
-    #main .main__discurso iframe {
+    .main .main__discurso iframe {
         width: 500px;
         height: 320px;
     }
 
-    #main .main__discurso__aniversario {
+    .main .main__discurso__aniversario {
         display: block;
         grid-template-rows: 5fr 1fr;
     }
 
-    #main .main__discurso img {
+    .main .main__discurso img {
         width: 325px;
     }
 
-    #main .main__objetivos {
+    .main .main__objetivos {
         margin-top: 2%;
         display: inline;
     }
 
-    #main .main__objetivos img {
+    .main .main__objetivos img {
         width: 320px;
     }
 
-    #main .main__sostenibilidad {
+    .main .main__sostenibilidad {
         display: inline;
     }
 
-    #main .main__sostenibilidad img {
+    .main .main__sostenibilidad img {
         width: 320px;
     }
 
@@ -841,14 +818,14 @@ input:focus {
         display: none;
     }
 
-    #main .main__solicitud__pedido {
+    .main .main__solicitud__pedido {
         height: 80vh;
     }
 
 }
 
  @media (min-width: 990px) { /* min = hasta... */
-    #main .main__solicitud__pedido {
+    .main .main__solicitud__pedido {
         height: 40vh;
     }
 }

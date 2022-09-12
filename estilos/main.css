@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: rgb(231, 222, 222);
+}
+
+.navbar-brand img {
+  width: 30%;
+  mix-blend-mode: multiply;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.main {
+  display: grid;
+  background-color: inherit;
+  width: 80%;
+  margin: auto;
+  height: auto;
+}
+.main__h4 {
+  text-align: center;
+  border-bottom: #18A555 solid 0.2rem;
+  color: #038203;
+}
+.main .main__titulos {
+  border-bottom: 5px solid #18A555;
+  text-align: center;
+  color: #008a00;
+  width: 40%;
+  display: inline-block;
+  position: relative;
+  left: 30%;
+  transform: translateX(-50%);
+}
+.main .main__leyendas {
+  color: #038203;
+  text-align: center;
+  padding: 0.2rem;
+}
+.main .main__cuadro {
+  margin: 1rem;
+  width: 25rem;
+  border: 0.2rem solid #038203;
+  background-color: white;
+}
+.main .main__lista {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main .main__lista ul {
+  align-items: center;
+}
+.main .main__lista li {
+  padding: 36px 0 36px 40px;
+  background-image: url(../img/oklist.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
+  background-blend-mode: multiply;
+}
+.main .main__boton {
+  color: #038203;
+  background-color: white;
+  border-radius: 100px;
+  width: 200px;
+}
+.main .main__boton:hover {
+  color: white;
+  background-color: #038203;
+  border-radius: 100px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.footer h6 {
+  text-align: center;
+}
+.footer .footer__atajos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.footer .footer__redes {
+  width: auto;
+  display: flex;
+  padding-left: 1rem;
+}
+.footer .footer__redes li {
+  padding-left: 1rem;
+}
+.footer .footer__redes__circulo {
+  border: 1px solid #008a00;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  line-height: 44px;
+  font-size: 1.8rem;
+  text-align: center;
+  display: block;
+  padding-top: 3px;
+}
+.footer .footer__redes__finig {
+  display: table;
+  margin: -0.5rem;
+  padding-left: 0.1rem;
+  color: #008a00;
+}
+.footer .footer__redes__tw {
+  display: table;
+  margin: -0.5rem;
+  padding-right: 0.2rem;
+  color: #008a00;
+}
+.footer .footer__redes__yt {
+  display: table;
+  margin: -0.6rem;
+  padding-top: 0.2rem;
+  color: #008a00;
+}
+
+#hover :hover {
+  background-color: #008a00;
+  color: white;
+  border-radius: 50%;
+  width: 44px;
+  font-size: 1.8rem;
+  padding: 1rem 0 1rem 0;
+  margin: -0.6rem;
+}
+
+/* Estilos exclusivos de Index */
+.main {
+  /* Index - Aniversario */
+  /* Index - Servicios */
+  /* Index__servicios__tarifas&horario */
+  /* Index__servicios__app */
+  /* Index__servicios__mapa */
+}
+.main .main__empresa {
+  grid-column: 1/3;
+  display: inline;
+}
+.main .main__empresa img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 15%;
+  mix-blend-mode: multiply;
+}
+.main .main__servicios {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.main .main__servicios_a {
+  margin-top: 20px;
+  display: flex;
+  grid-column: 1/3;
+  background: radial-gradient(farthest-side at 49% 50%, #18A555, rgb(231, 222, 222));
+}
+.main .main__servicios__img {
+  width: 50%;
+  border: solid white 0.1rem;
+  margin: 1rem;
+}
+.main .main__servicios__atajos li {
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.main .main__servicios__atajos li:hover {
+  text-decoration: underline;
+}
+.main .main__servicios__atajos li a {
+  color: #1c1c1c;
+  font-size: 1.2rem;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  border-left: solid #18A555 0.6rem;
+  border-right: solid #18A555 0.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.main .main__extras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main .main__extras img {
+  width: 20%;
+  mix-blend-mode: multiply;
+}
+.main .main__extras__horario {
+  display: inline-block;
+}
+.main .main__extras__horario li {
+  display: table;
+  text-align: center;
+}
+.main .main__leyendas.a {
+  padding: 36px 0 36px 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 90px;
+  background-blend-mode: multiply;
+  background-image: url("https://www.kindpng.com/picc/m/24-240621_dollar-sign-png-green-green-dollar-sign-youtube.png");
+}
+.main .main__leyendas.b {
+  padding: 36px 0 36px 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 90px;
+  background-blend-mode: multiply;
+  background-image: url("https://images.vexels.com/media/users/3/132299/isolated/preview/404f8c866ab55f52ed3f3cd8088e285c-caja-de-calendario-verde-espiral.png");
+}
+.main .main__app {
+  width: 80%;
+  text-align: center;
+}
+.main .main__app__contenido {
+  background: radial-gradient(#008a00, rgb(231, 222, 222));
+  border-radius: 100%;
+}
+.main .main__app__appstore {
+  width: 20vw;
+  margin: auto;
+  mix-blend-mode: multiply;
+}
+.main .main__app__playstore {
+  width: 17vw;
+  margin: auto;
+  mix-blend-mode: multiply;
+}
+.main .main__app__parrafo {
+  text-align: center;
+  font-style: italic;
+}
+.main .main__app__preview {
+  width: 80%;
+  mix-blend-mode: multiply;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.main .main__oficina__img {
+  width: 2vw;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */
