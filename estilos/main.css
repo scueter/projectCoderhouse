@@ -143,13 +143,6 @@ body {
 }
 
 /* Estilos exclusivos de Index */
-.main {
-  /* Index - Aniversario */
-  /* Index - Servicios */
-  /* Index__servicios__tarifas&horario */
-  /* Index__servicios__app */
-  /* Index__servicios__mapa */
-}
 .main .main__empresa {
   grid-column: 1/3;
   display: inline;
