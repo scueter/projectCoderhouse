@@ -11,6 +11,10 @@ body {
   background-color: rgb(231, 222, 222);
 }
 
+header {
+  margin-bottom: 50px;
+}
+
 .navbar-brand img {
   width: 30%;
   mix-blend-mode: multiply;
@@ -30,20 +34,20 @@ body {
   margin: auto;
   height: auto;
 }
-.main__h4 {
-  text-align: center;
-  border-bottom: #18A555 solid 0.2rem;
-  color: #038203;
-}
-.main .main__titulos {
+.main__titulos {
   border-bottom: 5px solid #18A555;
   text-align: center;
   color: #008a00;
   width: 40%;
   display: inline-block;
   position: relative;
-  left: 30%;
+  left: 50%;
   transform: translateX(-50%);
+}
+.main__h4 {
+  text-align: center;
+  border-bottom: #18A555 solid 0.2rem;
+  color: #038203;
 }
 .main .main__leyendas {
   color: #038203;
@@ -98,6 +102,7 @@ body {
   width: auto;
   display: flex;
   padding-left: 1rem;
+  justify-content: center;
 }
 .footer .footer__redes li {
   padding-left: 1rem;
@@ -142,7 +147,30 @@ body {
   margin: -0.6rem;
 }
 
+input {
+  transition: all 1s;
+}
+input:focus {
+  background-color: rgb(231, 222, 222);
+}
+
+.main__leyendas {
+  color: #038203;
+  text-align: center;
+  padding: 0.2rem;
+}
+
 /* Estilos exclusivos de Index */
+.main__titulo {
+  border-bottom: 5px solid #18A555;
+  text-align: center;
+  color: #008a00;
+  width: 40%;
+  display: inline-block;
+  position: relative;
+  left: 30%;
+  transform: translateX(-50%);
+}
 .main .main__empresa {
   grid-column: 1/3;
   display: inline;
@@ -155,6 +183,19 @@ body {
   margin-top: 15px;
   width: 15%;
   mix-blend-mode: multiply;
+}
+.main .main__services {
+  grid-column: 1/3;
+}
+.main .main__services__titulo {
+  border-bottom: 5px solid #18A555;
+  text-align: center;
+  color: #008a00;
+  width: 40%;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .main .main__servicios {
   margin-top: 50px;
@@ -198,6 +239,9 @@ body {
 .main .main__extras img {
   width: 20%;
   mix-blend-mode: multiply;
+}
+.main .main__extras p {
+  padding: 0 5% 0 5%;
 }
 .main .main__extras__horario {
   display: inline-block;
@@ -254,4 +298,297 @@ body {
 .main .main__oficina__img {
   width: 2vw;
   height: auto;
+}
+
+/* Estilos exclusivos de Realiza un Envio */
+#main .main__solicitud {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr;
+  justify-items: center; /* horizontal */
+  margin-top: 1%;
+  padding: 10px;
+  gap: 5%;
+}
+#main .main__solicitud__boton {
+  margin-top: 1.5%;
+  grid-column: 1/4;
+}
+#main .main__solicitud__campos {
+  display: grid;
+  margin-top: 3%;
+  border-bottom: solid #008a00 4px;
+}
+#main .main__solicitud__campos input {
+  border-radius: 6px;
+  border-bottom: solid;
+  height: 40px;
+  border: 1px solid #d3d3d3;
+  padding: 0 10px 0 25px;
+  margin-bottom: 2%;
+  font-size: 80%;
+  border-radius: 10px;
+  border-bottom: solid #18A555 4px;
+}
+#main .main__solicitud__largo {
+  grid-column: 1/4;
+  width: 315px;
+}
+#main .main__solicitud__medio {
+  grid-column: 1/3;
+  width: 210px;
+}
+#main .main__solicitud__corto {
+  width: 105px;
+}
+
+#main .main__boton {
+  color: #038203;
+  background-color: white;
+  border-radius: 100px;
+  width: 200px;
+}
+#main .main__boton:hover {
+  color: white;
+  background-color: #038203;
+  cursor: pointer;
+}
+
+/* Estilos exlusivos de rastrea un pedido */
+#main .main__solicitud__pedido {
+  justify-items: center;
+  margin: 5%;
+  height: 30vh;
+  position: relative;
+}
+#main .main__solicitud__pedido__largo {
+  width: 300px;
+  justify-self: center;
+  grid-column: 1/4;
+  border-bottom: solid;
+  height: 40px;
+  border: 1px solid white;
+  padding: 0 10px 0 25px;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+#main .main__solicitud__pedido__campos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+}
+#main .main__solicitud__pedido__campos h4 {
+  color: #008a00;
+  text-align: center;
+  font-weight: 400;
+}
+#main .main__solicitud__boton.pedido {
+  margin-top: 5%;
+  align-self: center;
+  justify-self: center;
+}
+#main .main__solicitud__card {
+  align-self: center;
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+}
+#main .main__solicitud__politicas {
+  padding-top: 2%;
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* estilos exclusivos de contactanos */
+/* general */
+#main .main__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 80px;
+}
+#main .main__titulo__contacto {
+  background-color: #18A555;
+  color: white;
+  width: 15rem;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-left: 20%;
+  display: inline-block;
+  position: relative;
+  margin-top: 5rem;
+}
+#main .main__encabezado {
+  background: url(https://image.shutterstock.com/image-photo/call-center-help-line-service-260nw-2110709018.jpg) no-repeat top/70%;
+  margin-top: 1rem;
+  height: 19rem;
+  border-radius: 50%;
+}
+#main .main__cuadro__contacto {
+  height: auto;
+  border: 0.2rem solid #008a00;
+}
+#main .main__p {
+  text-align: center;
+}
+#main .main__1 {
+  width: 80%;
+}
+
+/* contactanos- mensaje */
+#main .main__mensaje {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  background-color: rgb(172, 236, 172);
+  padding: 10px;
+}
+#main .main__mensaje__form input {
+  margin-bottom: 50px;
+}
+#main .main__mensaje__texto {
+  width: 90%;
+  height: 100%;
+  border: 5px solid #d3d3d3;
+  padding: 0 10px 0 25px;
+  border-radius: 10px;
+}
+#main .main__mensaje .main__leyendas {
+  grid-column: 1/3;
+}
+
+/* contactanos - Lineas */
+#main .main__lineas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: lightcyan;
+  padding: 10px 10px 0px 10px;
+}
+#main .main__lineas legend {
+  display: inline-block;
+  position: relative;
+  left: 100%;
+  transform: translateX(-50%);
+}
+#main .main__lineas__nacional {
+  border-right: #008a00 solid 0.2rem;
+  margin-left: 20px;
+}
+#main .main__lineas__nacional li {
+  padding-bottom: 4px;
+  list-style: circle;
+}
+#main .main__lineas__internacional li {
+  padding-bottom: 4px;
+  list-style: circle;
+}
+#main .main__lineas p {
+  grid-column: 1/3;
+}
+
+/* contactanos -Chat */
+#main .main__chat p {
+  padding: 0 10px 0 10px;
+}
+#main .main__chat__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+  padding: 10px;
+}
+#main .main__chat__campo {
+  grid-column: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
+/* contactanos -Oficinas */
+#main .main__oficinas div, #main .main__oficinas p {
+  padding: 17px;
+}
+#main .main__oficinas__map iframe {
+  width: 100% !important;
+}
+
+/* Estilos exlusivos de Nosotros */
+.video iframe {
+  width: 83vw;
+  height: 40vh;
+  border-radius: 35px;
+  margin: 30px;
+}
+
+.main .main__boton__historia {
+  color: #038203;
+  background-color: white;
+  border-radius: 100px;
+  width: 200px;
+  border: #008a00 solid 2px;
+  align-self: center;
+  justify-self: center;
+  margin-top: 5px;
+  width: 60%;
+}
+.main .main__boton__historia:hover {
+  transition: all 1s;
+  background-color: #008a00;
+  color: white;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
+.main .main__h4.a {
+  padding: 20px;
+}
+.main .main__aniversario {
+  text-align: -webkit-center;
+}
+.main .main__discurso {
+  display: flex;
+  align-items: center;
+  width: 83vw;
+  gap: 10px;
+  margin-top: 50px;
+}
+.main .main__discurso img {
+  width: 600px;
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  margin-top: 10px;
+}
+.main .main__discurso__aniversario {
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+}
+.main .main__discurso__aniversario p {
+  text-align: justify;
+}
+.main .main__objetivos {
+  margin: 5% 0 5% 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+  background: radial-gradient(farthest-side at 50% 50%, #18A555, rgb(231, 222, 222));
+}
+.main .main__objetivos img {
+  width: 500px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+.main .main__objetivos h4 {
+  margin-bottom: 20px;
+}
+.main .main__sostenibilidad {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.main .main__sostenibilidad p {
+  margin-top: 20px;
+}
+.main .main__sostenibilidad img {
+  mix-blend-mode: multiply;
 }/*# sourceMappingURL=main.css.map */

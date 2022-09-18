@@ -3,6 +3,11 @@ body {
 }
 
 //header
+header {
+    margin-bottom: 50px;
+}
+
+
 .navbar-brand {
     img {
         width: 30%;
@@ -30,20 +35,22 @@ body {
     width: 80%;
     margin: auto;
     height: auto;
-    &__h4 {
-        text-align: center;
-        border-bottom: $secundaryColor solid 0.2rem;
-        color: $titleColor;
-    }
-    & &__titulos {
+
+    &__titulos {
         border-bottom: 5px solid $secundaryColor;
         text-align: center;
         color: $primaryColor;
         width: 40%;
         display: inline-block;
         position: relative;
-        left: 30%; 
+        left: 50%; 
         transform: translateX(-50%);
+    }
+
+    &__h4 {
+        text-align: center;
+        border-bottom: $secundaryColor solid 0.2rem;
+        color: $titleColor;
     }
     & &__leyendas {
         color: $titleColor;
@@ -102,6 +109,7 @@ body {
         width: auto;
         display: flex;
         padding-left: 1rem;
+        justify-content: center;
         & li {
             padding-left: 1rem;
         }
@@ -146,4 +154,18 @@ body {
     font-size: 1.8rem;
     padding: 1rem 0 1rem 0;
     margin: -0.6rem;
+}
+
+input {
+    transition: all 1s;
+
+    &:focus {
+        background-color: $bgColor;
+    }
+}
+
+.main__leyendas {
+    color: $titleColor;
+    text-align: center;
+    padding: 0.2rem;
 }
