@@ -687,6 +687,10 @@ input:focus {
         grid-column: 1/3;
     }
 
+    #main .main__servicios__img {
+        display: none;
+    }
+
     #main .main__servicios{
         justify-items: center;
     }
@@ -710,10 +714,6 @@ input:focus {
     #main .main__app__playstore {
         width: 42%;
         margin: auto
-    }
-
-    #main .main__servicios__img {
-        display: none;
     }
 
     #main .main__app__preview {
