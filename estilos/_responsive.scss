@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 800px) {
     //global theme
 
 
@@ -68,8 +68,8 @@
         width: 10%;
         font-size: small;
 
-        & &__empresa img {
-            width: 40%!important; //no se pq me toco hacer esto
+        & &__empresa__imagen.aos-init.aos-animate {
+            width: 50%;
         }
 
         & &__servicios {
@@ -231,8 +231,12 @@
 
     /* Contactanos */ 
 
-    .main .main {
-        &__discurso {
+    .main {
+        & &__aniversario {
+            width: 320px;
+        }
+
+        & &__discurso {
             display: flex!important;
             flex-wrap: wrap!important;
             width: 90vw!important;
@@ -248,25 +252,59 @@
             }
         }
 
-        &__empresa__a, &__boton__historia {
-            width: 90%!important;
+        & &__empresa__a {
+            width: 90vw!important;
             position: relative;
-            left: 20px;
+
         }
 
-        &__objetivos {
+        & &__boton__historia {
+            width: 90%;
+            position: relative;
+            left: 50px;
+
+            &.aniversario {
+                left: 10px;
+                width: 80%;
+            }
+        }
+
+        & &__objetivos {
             margin-top: 2%!important;
             display: inline!important;
+
+            & div {
+                padding-left: 10px;
+                padding-bottom: 10px; 
+                & p {
+                    text-align: justify;
+                    padding-bottom: 10px; 
+                }
+            }
         }
 
-        &__sostenibilidad {
-            display: inline!important;
+        & &__sostenibilidad {
+            display: flex!important;
+            flex-wrap: wrap;
+
+            & div {
+                padding-left: 10px;
+                & p {
+                    text-align: justify;
+                }
+            }
+
+
 
             & img {
-                width: 290px!important;
+                width: 290px;
             }
         }
         
+    }
+
+    body {
+        width: 320px;
     }
 
 }
