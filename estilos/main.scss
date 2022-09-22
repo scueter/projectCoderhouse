@@ -1,0 +1,526 @@
+//imports
+@import 'global';
+@import 'vars';
+@import 'mainTheme';
+@import 'responsive';
+
+//plantillas
+
+@mixin bulletList {
+    padding: 36px 0 36px 40px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 90px;
+    background-blend-mode: multiply; 
+}
+
+@mixin boton {
+    color: $titleColor;
+    background-color:  $lightColor;
+    border-radius: 100px;
+    width: 200px;
+}
+
+
+/* Estilos exclusivos de Index */
+
+
+
+.main {
+
+    &__titulo {
+        border-bottom: 5px solid $secundaryColor;
+        text-align: center;
+        color: $primaryColor;
+        width: 40%;
+        display: inline-block;
+        position: relative;
+        left: 30%; 
+        transform: translateX(-50%);
+    }
+    // Index - Aniversario
+    & &__empresa{
+        grid-column: 1/3;
+        display: inline;
+        & img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            width: 15%;
+            mix-blend-mode: multiply;
+        }
+    }
+    // Index - Servicios
+    & &__services {
+        grid-column: 1/3;
+        &__titulo {
+            border-bottom: 5px solid $secundaryColor;
+            text-align: center;
+            color: $primaryColor;
+            width: 40%;
+            display: inline-block;
+            position: relative;
+            left: 50%; 
+            transform: translateX(-50%);
+        }
+    }
+    
+    & &__servicios {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        &_a {
+            margin-top: 20px;
+            display: flex;
+            grid-column: 1/3;
+            background: radial-gradient(farthest-side at 49% 50%, $secundaryColor, $bgColor);
+        }
+        &__img {
+            width: 50%;
+            border: solid $lightColor 0.1rem;
+            margin: 1rem;
+        }
+        &__atajos li {
+            padding-left: 1rem;
+            margin-bottom: 3rem;
+            margin-top: 2rem;
+            &:hover {
+                text-decoration: underline;
+            }
+            & a {
+                color: #1c1c1c;
+                font-size: 1.2rem;
+                text-decoration: solid;
+                border-left: solid $secundaryColor 0.6rem;
+                border-right: solid $secundaryColor 0.6rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+    // Index__servicios__tarifas&horario
+    & &__extras {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        & img {
+            width: 20%;
+            mix-blend-mode: $imgBlend;
+        }
+        & p {
+            padding: 0 5% 0 5%;
+        }
+        &__horario {
+            display: inline-block;
+            & li {
+                display: table;
+                text-align: center;
+            }
+        }
+    }
+    & &__leyendas.a {
+        @include bulletList;
+        background-image: url("https://www.kindpng.com/picc/m/24-240621_dollar-sign-png-green-green-dollar-sign-youtube.png");
+    }
+    & &__leyendas.b {
+        @include bulletList;
+        background-image: url("https://images.vexels.com/media/users/3/132299/isolated/preview/404f8c866ab55f52ed3f3cd8088e285c-caja-de-calendario-verde-espiral.png");
+    }
+
+    // Index__servicios__app 
+    & &__app {
+        width: 80%;
+        text-align: center;
+        &__contenido {
+            background: radial-gradient( $primaryColor, $bgColor);
+            border-radius: 100%
+        }
+        &__appstore {
+            width: 20vw;
+            margin: auto;
+            mix-blend-mode: $imgBlend;
+        }
+        &__playstore {
+            width: 17vw;
+            margin: auto;
+            mix-blend-mode: multiply;
+        }
+        &__parrafo {
+            text-align: center;
+            font-style: italic;
+        }
+        &__preview {
+            width: 80%;
+            mix-blend-mode: $imgBlend;
+            border-top-right-radius: 20%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+    }
+    // Index__servicios__mapa 
+    & &__oficina__img {
+        width: 2vw;
+        height: auto;
+    }
+}
+
+
+/* Estilos exclusivos de Realiza un Envio */
+
+#main { 
+
+    .main__solicitud {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr 1fr;
+        justify-items: center; /* horizontal */
+        margin-top: 1%;
+        padding: 10px;
+        gap: 5%;
+
+        &__boton {
+            margin-top: 1.5%;
+            grid-column: 1/4;
+        }
+
+        &__campos {
+            display: grid;
+            margin-top: 3%;
+            border-bottom: solid $primaryColor 4px;
+
+            & input {
+                border-radius: 6px;
+                border-bottom: solid;
+                height: 40px;
+                border: 1px solid #d3d3d3;
+                padding: 0 10px 0 25px;
+                margin-bottom: 2%;
+                font-size: 80%;
+                border-radius: 10px;
+                border-bottom: solid $secundaryColor 4px;
+            }
+        }
+
+        &__largo {
+            grid-column: 1/4;
+            width: 315px;
+        }
+
+        &__medio {
+            grid-column: 1/3;
+            width: 210px;
+        }
+
+        &__corto {
+            width: 105px;
+        }
+    }
+}
+
+#main .main__boton {
+    @include boton;
+    
+    &:hover {
+        color: $lightColor;
+        background-color: $titleColor;
+        cursor: pointer;
+    }
+}
+
+/* Estilos exlusivos de rastrea un pedido */
+
+#main {
+
+    & .main__solicitud {
+
+        &__pedido {
+            justify-items: center;
+            margin: 5%;
+            height: 30vh;
+            position: relative;
+            
+            &__largo {
+                width: 300px;
+                justify-self: center;
+                grid-column: 1/4;
+                border-bottom: solid;
+                height: 40px;
+                border: 1px solid $lightColor;
+                padding: 0 10px 0 25px;
+                margin-top: 2%;
+                border-radius: 10px;
+            }
+
+            &__campos {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                margin-top: 50px;
+
+                & h4 {
+                    color: $primaryColor;
+                    text-align: center;
+                    font-weight: 400;
+                }
+            }
+        }
+        
+        &__boton.pedido {
+            margin-top: 5%;
+            align-self: center;
+            justify-self: center;
+
+        }
+
+        &__card {
+            align-self: center;
+            width: 20%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        &__politicas {
+            padding-top: 2%;
+            width: 50%;
+            display: inline-block;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+/* estilos exclusivos de contactanos */
+/* general */
+#main .main {
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 80px;
+    }
+
+    &__titulo__contacto {
+        background-color: $secundaryColor;
+        color: $lightColor;
+        width: 15rem;
+        border-radius: 20%;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-left: 20%;
+        display: inline-block;
+        position: relative;
+        margin-top: 5rem ;
+    }
+
+    &__encabezado {
+        background: url(https://image.shutterstock.com/image-photo/call-center-help-line-service-260nw-2110709018.jpg) no-repeat top/70%;
+        margin-top: 1rem;
+        height: 19rem;
+        border-radius: 50%;
+    }
+
+    &__cuadro__contacto {
+        height: auto;
+        border: 0.2rem solid $primaryColor;
+    }
+    &__p {
+        text-align: center;
+    }
+
+    &__1 {
+        width: 80%;
+    }
+}
+
+/* contactanos- mensaje */
+
+#main .main__mensaje {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background-color: rgb(172, 236, 172);
+    padding: 10px;
+
+    &__form input {
+        margin-bottom: 50px;
+    }
+    
+    &__texto {
+        width: 90%;
+        height: 100%;
+        border: 5px solid #d3d3d3;
+        padding: 0 10px 0 25px;
+        border-radius: 10px;
+    }
+    
+    & .main__leyendas {
+        grid-column: 1/3;
+    }
+}
+
+/* contactanos - Lineas */
+
+#main .main__lineas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightcyan;
+    padding: 10px 10px 0px 10px;
+
+    & legend {
+        display: inline-block;
+        position: relative;
+        left: 100%; 
+        transform: translateX(-50%);
+    }
+
+    &__nacional {
+        border-right: $primaryColor solid 0.2rem;
+        margin-left: 20px;
+        
+        & li {
+            padding-bottom: 4px;
+            list-style: circle;
+        }
+    }
+
+    &__internacional li {
+        padding-bottom: 4px;
+        list-style: circle;
+    }
+
+    & p {
+        grid-column: 1/3;
+    }
+}
+
+/* contactanos -Chat */
+
+#main .main__chat {
+
+    & p {
+        padding: 0 10px 0 10px;
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5px;
+        padding: 10px;
+    }
+
+    &__campo {
+        grid-column: 1/3;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+/* contactanos -Oficinas */
+
+#main .main__oficinas {
+    & div, p {
+        padding: 17px;
+    }
+
+    &__map iframe {
+        width: 100%!important;
+    }
+}
+
+/* Estilos exlusivos de Nosotros */
+
+.video iframe {
+    width: 83vw;
+    height: 40vh;
+    border-radius: 35px;
+    margin: 30px;
+}
+
+
+
+.main .main {
+
+    &__boton__historia {
+        @include boton();
+        border: $primaryColor solid 2px;
+        align-self: center;
+        justify-self: center;
+        margin-top: 5px;
+        width: 60%;
+
+        &:hover {
+            transition: all 1s;
+            background-color: $primaryColor;
+            color:  $lightColor;
+            box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+        }
+    }
+
+    &__h4.a {
+        padding: 20px;
+    }
+
+    &__aniversario {
+        text-align: -webkit-center;
+    }
+
+    &__discurso {
+        display: flex;
+        align-items: center;
+        width: 83vw;
+        gap: 10px;
+        margin-top: 50px;
+
+        & img {
+            width: 600px;
+            border-bottom-right-radius: 35px;
+            border-top-left-radius: 35px;
+            margin-top: 10px;
+        }
+
+        &__aniversario {
+            display: grid;
+            grid-template-rows: 5fr 1fr;
+
+            & p {
+                text-align: justify;
+            }
+        }
+    }
+
+    &__objetivos {
+        margin: 5% 0 5% 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5%;
+        background: radial-gradient(farthest-side at 50% 50%, $secundaryColor, $bgColor);
+    
+        & img {
+            width: 500px;
+            border-bottom-left-radius: 35px;
+            border-top-right-radius: 35px;
+        }
+
+        & h4 {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__sostenibilidad {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        & p {
+            margin-top: 20px;
+        }
+
+        & img {
+            mix-blend-mode: $imgBlend;
+        }
+    }
+}

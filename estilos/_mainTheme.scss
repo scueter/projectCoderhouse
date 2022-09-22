@@ -1,0 +1,171 @@
+body {
+    background-color: $bgColor;
+}
+
+//header
+header {
+    margin-bottom: 50px;
+}
+
+
+.navbar-brand {
+    img {
+        width: 30%;
+        mix-blend-mode: $imgBlend;
+    }
+}
+
+.nav-link {
+    &:hover {
+        color: $lightColor!important; //era necesario
+    }
+    &.active {
+        text-decoration: underline;
+    }
+
+}
+
+
+
+//main
+
+.main {
+    display: grid;
+    background-color: inherit;
+    width: 80%;
+    margin: auto;
+    height: auto;
+
+    &__titulos {
+        border-bottom: 5px solid $secundaryColor;
+        text-align: center;
+        color: $primaryColor;
+        width: 40%;
+        display: inline-block;
+        position: relative;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    &__h4 {
+        text-align: center;
+        border-bottom: $secundaryColor solid 0.2rem;
+        color: $titleColor;
+    }
+    & &__leyendas {
+        color: $titleColor;
+        text-align: center;
+        padding: 0.2rem;
+    }
+    & &__cuadro {
+        margin: 1rem;  
+        width: 25rem;
+        border: 0.2rem solid $titleColor;
+        background-color: $lightColor;
+    }
+    & &__lista {
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        & ul {
+            align-items: center;  
+        }
+        & li {
+            padding: 36px 0 36px 40px;
+            background-image: url(../img/oklist.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 40px;
+            background-blend-mode: multiply;
+        }
+    }
+    & &__boton {
+        color: $titleColor;
+        background-color:  $lightColor;
+        border-radius: 100px;
+        width: 200px;
+        &:hover{
+            color: $lightColor;   
+            background-color:  $titleColor;
+            border-radius: 100px;
+            width: 200px;
+            cursor: pointer;
+        }
+    }
+}
+
+//footer
+
+.footer {
+    h6 {
+        text-align: center
+    }
+    & &__atajos {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    & &__redes {
+        width: auto;
+        display: flex;
+        padding-left: 1rem;
+        justify-content: center;
+        & li {
+            padding-left: 1rem;
+        }
+        &__circulo {
+            border: 1px solid $primaryColor;
+            border-radius: 50%;
+            height: 44px;
+            width: 44px;
+            line-height: 44px;
+            font-size: 1.8rem;
+            text-align: center;
+            display: block;
+            padding-top: 3px
+        }
+        &__finig {
+            display: table;
+            margin: -0.5rem;
+            padding-left: 0.1rem;
+            color: $primaryColor;
+        }
+        &__tw {
+            display: table;
+            margin: -0.5rem;
+            padding-right: 0.2rem;
+            color: $primaryColor;
+        }
+        &__yt {
+            display: table;
+            margin: -0.6rem;
+            padding-top: 0.2rem;
+            color: $primaryColor;
+        }
+        
+    }
+}
+
+#hover :hover {
+    background-color: $primaryColor;
+    color: $lightColor;
+    border-radius: 50%;
+    width: 44px;
+    font-size: 1.8rem;
+    padding: 1rem 0 1rem 0;
+    margin: -0.6rem;
+}
+
+input {
+    transition: all 1s;
+
+    &:focus {
+        background-color: $bgColor;
+    }
+}
+
+.main__leyendas {
+    color: $titleColor;
+    text-align: center;
+    padding: 0.2rem;
+}

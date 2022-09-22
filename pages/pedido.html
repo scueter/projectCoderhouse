@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rastrea tu pedido</title>
+    <meta name="description" content="Realiza tus envíos a cualquier lugar del mundo">
+    <meta name="keyword" content="enviar, envios, envia, paquetes, giros, internacional">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/nuevo.css">
-    <link rel="icon" href="../img/oklist.png">
+    <link rel="stylesheet" href="../estilos/main.css">
   </head>
 
 <body>
@@ -47,65 +48,53 @@
         </header>
 
     <main id="main">
-        <h1 class="main__titulos">Revisa el estado de tus pedidos y envios</h1>
 
-        <div class="main__solicitudes">
     
-            <form class="main__solicitud__pedido">
-
-                <div class="main__solicitud__datos"> 
-                    <h4 class="main__h4">Rastrea un paquete</h4>
-                    <section class="main__pedido__campos pedido">
-                        <h4 class="main__h4__pedido">¿Qué deseas consultar?</h4>
-                        <label for="">
-                            Paquete
-                            <input type="radio" name="consultaType" value="paquete">
-                        </label>
-                        <label for="">
-                            Envío de dinero
-                            <input type="radio" name="consultaType" value="dinero">
-                        </label>
-                        <input class="main__solicitud__largo__pedido" type="text" placeholder="Ingresa el numero de guía (Ej: 91321321)" required maxlength="30">
-                        
-                        <div class="main__solicitud__boton pedido" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                            <input class="main__boton" type="reset" value="Limpiar todo">
-                            <input  class="main__boton" type="submit" value="Realizar consulta">
-                        </div>
-                    </section>
-                </div>
-
-
-        </div>     
-        
-        <div id="card" class="card rounded-pill">
-            <img src="https://imviyumbo.gov.co/wp-content/uploads/2022/02/PAG-051.png" class="card-img-top" alt="politica de calidad">
+      <div class="main__solicitud__a">
+        <h1 class="main__titulos">Revisa el estado de tus pedidos y envios</h1>
+        <form class="main__solicitud__pedido">
+ 
+          <h4 class="main__h4">Rastrea un paquete</h4>
+          <section class="main__solicitud__pedido__campos">
+            <h4>¿Qué deseas consultar?</h4>
+            <label for="">
+              Paquete
+              <input type="radio" name="consultaType" value="paquete">
+            </label>
           
-            <div class="card-body text-center">
-              <h5 class="card-title">Conoce más de nosotros</h5>
-              <p class="card-text">Lograr la satisfacción permanente de las necesidades y expectativas de los Clientes con objetivos de competitividad, productividad y crecimiento. Para tal fin, se aseguran estándares de calidad en los procesos de logística y comunicación, con un Talento Humano, comprometido e idóneo.</p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+            <label for="">
+              Envío de dinero
+              <input type="radio" name="consultaType" value="dinero">
+            </label>
+
+            <input class="main__solicitud__pedido__largo" type="text" placeholder="Ingresa el numero de guía (Ej: 91321321)" required maxlength="30">   
+
+            <div class="main__solicitud__boton pedido" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <input class="main__boton" type="reset" value="Limpiar todo">
+              <input  class="main__boton" type="submit" value="Realizar consulta">
             </div>
-          </div>
+          </section>
+      </div>
 
     </main>
 
-    <footer id="footer"  data-aos="fade" data-aos-anchor-placement="bottom-bottom">
-        <section class="footer__atajos">
-            <div>
-                <h4 class="main__h4">Siguenos en nuestras redes sociales</h4>
-                <ul class="footer__redes">
-                    <li class="footer__redes__circulo"><a href="https://www.facebook.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="footer__redes__circulo"><a href="https://twitter.com/home" class="footer__redes__tw" id="hover"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="footer__redes__circulo"><a href="https://www.youtube.com/" class="footer__redes__yt" id="hover"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li class="footer__redes__circulo"><a href="https://www.instagram.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="footer__redes__circulo"><a href="https://www.linkedin.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
-            <h4 class="main__h4">Trabaja con nosotros</h4>
-            <h4 class="main__h4">PQR</h4>
-        </section>
-        <h6>©2022 Mensajeria, All Rights Reserved</h6>
-    </footer>
+    <footer class="footer">
+      <section class="footer__atajos">
+          <div>
+              <h4 class="main__h4">Siguenos en nuestras redes sociales</h4>
+              <ul class="footer__redes">
+                  <li class="footer__redes__circulo"><a href="https://www.facebook.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li class="footer__redes__circulo"><a href="https://twitter.com/home" class="footer__redes__tw" id="hover"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="footer__redes__circulo"><a href="https://www.youtube.com/" class="footer__redes__yt" id="hover"><i class="fa-brands fa-youtube"></i></a></li>
+                  <li class="footer__redes__circulo"><a href="https://www.instagram.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="footer__redes__circulo"><a href="https://www.linkedin.com/" class="footer__redes__finig" id="hover"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              </ul>
+          </div>
+          <h4 class="main__h4">Trabaja con nosotros</h4>
+          <h4 class="main__h4">PQR</h4>
+      </section>
+      <h6>©2022 Mensajeria, All Rights Reserved</h6>
+  </footer>
 
     <script src="https://kit.fontawesome.com/d0a5b95b78.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
