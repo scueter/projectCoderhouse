@@ -84,9 +84,9 @@
             }
 
             &__atajos li a {
-                font-size: 1rem; //f*k dis
-                padding-left: 0rem;//f*k dis
-                padding-right: 0rem;//f*k dis
+                font-size: 1rem!important; 
+                padding-left: 0rem!important;
+                padding-right: 0rem!important;
             }
         }
         & &__app {  //auxiliooooooooooooooooooo
@@ -175,11 +175,6 @@
             margin-top: 2rem !important;
         }
 
-        &__body {
-            position: relative;
-            left: -40px;
-        }
-
         &__cuadro__contacto {
             display: flex!important;
             flex-wrap: wrap!important;
@@ -241,6 +236,7 @@
             flex-wrap: wrap!important;
             width: 90vw!important;
             gap: 10px!important;
+            justify-content: center;
 
             & img  {
                 width: 290px!important;
@@ -259,7 +255,7 @@
         }
 
         & &__boton__historia {
-            width: 90%;
+            width: 80%!important;
             position: relative;
             left: 50px;
 
@@ -301,10 +297,6 @@
             }
         }
         
-    }
-
-    body {
-        width: 320px;
     }
 
 }
